@@ -1,0 +1,3 @@
+[submodule "bronze-qiskit"]
+	path = bronze-qiskit
+	url = https://gitlab.com/qworld/bronze-qiskit
