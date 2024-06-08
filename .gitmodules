@@ -1,3 +1,6 @@
 [submodule "bronze-qiskit"]
 	path = bronze-qiskit
 	url = https://gitlab.com/qworld/bronze-qiskit
+[submodule "nickel-qiskit"]
+	path = nickel-qiskit
+	url = https://gitlab.com/qworld/nickel.git
