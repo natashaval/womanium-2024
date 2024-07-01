@@ -1,0 +1,22 @@
+\documentclass[border=2px]{standalone}
+
+\usepackage[braket, qm]{qcircuit}
+\usepackage{graphicx}
+
+\begin{document}
+\scalebox{1.0}{
+\Qcircuit @C=1.0em @R=1.0em @!R { \\
+	 	\nghost{{q}_{0} :  } & \lstick{{q}_{0} :  } & \multigate{3}{\mathrm{main\_hadamard\_transform}}_<<<{0} & \multigate{11}{\mathrm{main\_arithmetic}}_<<<{0} & \qw & \qw\\
+	 	\nghost{{q}_{1} :  } & \lstick{{q}_{1} :  } & \ghost{\mathrm{main\_hadamard\_transform}}_<<<{1} & \ghost{\mathrm{main\_arithmetic}}_<<<{1} & \qw & \qw\\
+	 	\nghost{{q}_{2} :  } & \lstick{{q}_{2} :  } & \ghost{\mathrm{main\_hadamard\_transform}}_<<<{2} & \ghost{\mathrm{main\_arithmetic}}_<<<{2} & \qw & \qw\\
+	 	\nghost{{q}_{3} :  } & \lstick{{q}_{3} :  } & \ghost{\mathrm{main\_hadamard\_transform}}_<<<{3} & \ghost{\mathrm{main\_arithmetic}}_<<<{3} & \qw & \qw\\
+	 	\nghost{{q}_{4} :  } & \lstick{{q}_{4} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{4} & \qw & \qw\\
+	 	\nghost{{q}_{5} :  } & \lstick{{q}_{5} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{5} & \qw & \qw\\
+	 	\nghost{{q}_{6} :  } & \lstick{{q}_{6} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{6} & \qw & \qw\\
+	 	\nghost{{q}_{7} :  } & \lstick{{q}_{7} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{7} & \qw & \qw\\
+	 	\nghost{{q}_{8} :  } & \lstick{{q}_{8} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{8} & \qw & \qw\\
+	 	\nghost{{q}_{9} :  } & \lstick{{q}_{9} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<{9} & \qw & \qw\\
+	 	\nghost{{q}_{10} :  } & \lstick{{q}_{10} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<<{10} & \qw & \qw\\
+	 	\nghost{{q}_{11} :  } & \lstick{{q}_{11} :  } & \qw & \ghost{\mathrm{main\_arithmetic}}_<<<<{11} & \qw & \qw\\
+\\ }}
+\end{document}
